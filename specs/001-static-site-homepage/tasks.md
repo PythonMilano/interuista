@@ -17,12 +17,12 @@
 
 **Purpose**: Project initialization, Pelican configuration, and custom theme skeleton
 
-- [ ] T001 Update pyproject.toml to add Pelican and Markdown dependencies in pyproject.toml
-- [ ] T002 Create .gitignore with output/ directory and Python/Pelican standard ignores in .gitignore
-- [ ] T003 [P] Create Pelican configuration with site metadata (SITENAME="Intervista Pythonista", DEFAULT_LANG="it", TIMEZONE, PATH="content", PAGE_URL="{slug}", PAGE_SAVE_AS="{slug}.html", INDEX_SAVE_AS="", FEED_ALL_ATOM=None, THEME="theme/flavor") in pelicanconf.py
-- [ ] T004 [P] Create production configuration overlay importing pelicanconf and setting SITEURL, RELATIVE_URLS=False in publishconf.py
-- [ ] T005 [P] Create custom theme directory structure: theme/flavor/static/css/ and theme/flavor/templates/
-- [ ] T006 Remove scaffold main.py (no longer needed for static site)
+- [x] T001 Update pyproject.toml to add Pelican and Markdown dependencies in pyproject.toml
+- [x] T002 Create .gitignore with output/ directory and Python/Pelican standard ignores in .gitignore
+- [x] T003 [P] Create Pelican configuration with site metadata (SITENAME="Intervista Pythonista", DEFAULT_LANG="it", TIMEZONE, PATH="content", PAGE_URL="{slug}", PAGE_SAVE_AS="{slug}.html", INDEX_SAVE_AS="", FEED_ALL_ATOM=None, THEME="theme/flavor") in pelicanconf.py
+- [x] T004 [P] Create production configuration overlay importing pelicanconf and setting SITEURL, RELATIVE_URLS=False in publishconf.py
+- [x] T005 [P] Create custom theme directory structure: theme/flavor/static/css/ and theme/flavor/templates/
+- [x] T006 Remove scaffold main.py (no longer needed for static site)
 
 **Checkpoint**: Pelican project skeleton ready. Running `pelican content` should succeed (with empty output).
 
@@ -34,8 +34,8 @@
 
 **CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T007 Create base page template with semantic HTML5 structure (<!DOCTYPE html>, html lang="it", head with meta charset/viewport/description/OG tags, header, main, footer, nav landmarks) in theme/flavor/templates/page.html
-- [ ] T008 Create single CSS file with CSS custom properties for colors/fonts/spacing, base reset, typography, mobile-first responsive layout (min-width breakpoint for desktop), and semantic element styling in theme/flavor/static/css/style.css
+- [x] T007 Create base page template with semantic HTML5 structure (<!DOCTYPE html>, html lang="it", head with meta charset/viewport/description/OG tags, header, main, footer, nav landmarks) in theme/flavor/templates/page.html
+- [x] T008 Create single CSS file with CSS custom properties for colors/fonts/spacing, base reset, typography, mobile-first responsive layout (min-width breakpoint for desktop), and semantic element styling in theme/flavor/static/css/style.css
 
 **Checkpoint**: Foundation ready. `pelican content` generates a valid HTML page with proper semantic structure and responsive CSS. No content yet.
 
@@ -49,10 +49,10 @@
 
 ### Implementation for User Story 1
 
-- [ ] T009 [US1] Create home page Markdown file with Pelican metadata (Title: Intervista Pythonista, URL: "", Save_as: index.html, Status: published, Lang: it) and podcast description paragraph in Italian in content/pages/home.md
-- [ ] T010 [US1] Add host profiles section to home page content with Marco Santoni (data science/AI) and Cesare Placanica (telecom/coding/DevOps, Python Milano veteran) in content/pages/home.md
-- [ ] T011 [US1] Add inline SVG icons for podcast platforms (Spotify, Apple Podcasts, YouTube, RSS) to the page template with links opening in new tab (target="_blank" rel="noopener") in theme/flavor/templates/page.html
-- [ ] T012 [US1] Add podcast platform links section styling (icon grid/row layout, hover states, accessible focus indicators) to theme/flavor/static/css/style.css
+- [x] T009 [US1] Create home page Markdown file with Pelican metadata (Title: Intervista Pythonista, URL: "", Save_as: index.html, Status: published, Lang: it) and podcast description paragraph in Italian in content/pages/home.md
+- [x] T010 [US1] Add host profiles section to home page content with Marco Santoni (data science/AI) and Cesare Placanica (telecom/coding/DevOps, Python Milano veteran) in content/pages/home.md
+- [x] T011 [US1] Add inline SVG icons for podcast platforms (Spotify, Apple Podcasts, YouTube, RSS) to the page template with links opening in new tab (target="_blank" rel="noopener") in theme/flavor/templates/page.html
+- [x] T012 [US1] Add podcast platform links section styling (icon grid/row layout, hover states, accessible focus indicators) to theme/flavor/static/css/style.css
 
 **Checkpoint**: User Story 1 fully functional. Home page displays all podcast discovery content. Platform links work.
 
@@ -66,9 +66,9 @@
 
 ### Implementation for User Story 2
 
-- [ ] T013 [US2] Add community links section (LinkedIn Python Milano page, Slack workspace, email contact) to home page content in content/pages/home.md
-- [ ] T014 [US2] Add inline SVG icons for community channels (LinkedIn, Slack, email/envelope) to the page template in theme/flavor/templates/page.html
-- [ ] T015 [US2] Add community links section styling (consistent with platform links layout) to theme/flavor/static/css/style.css
+- [x] T013 [US2] Add community links section (LinkedIn Python Milano page, Slack workspace, email contact) to home page content in content/pages/home.md
+- [x] T014 [US2] Add inline SVG icons for community channels (LinkedIn, Slack, email/envelope) to the page template in theme/flavor/templates/page.html
+- [x] T015 [US2] Add community links section styling (consistent with platform links layout) to theme/flavor/static/css/style.css
 
 **Checkpoint**: User Stories 1 AND 2 both work. All external links on the page function correctly.
 
@@ -82,10 +82,10 @@
 
 ### Implementation for User Story 3
 
-- [ ] T016 [US3] Add complete SEO meta tags (title, description, canonical URL, Open Graph og:title/og:description/og:type/og:url/og:locale) to head section in theme/flavor/templates/page.html
-- [ ] T017 [US3] Add ARIA landmarks and roles, ensure all images/icons have alt text or aria-hidden="true" for decorative SVGs, verify heading hierarchy (single h1) in theme/flavor/templates/page.html
-- [ ] T018 [US3] Audit and optimize CSS for minimal payload: remove unused rules, verify total size < 10 KB, ensure sufficient color contrast ratios (WCAG AA) in theme/flavor/static/css/style.css
-- [ ] T019 [US3] Verify all external links have target="_blank" rel="noopener", verify no JavaScript is included anywhere, verify no third-party resources are loaded in theme/flavor/templates/page.html
+- [x] T016 [US3] Add complete SEO meta tags (title, description, canonical URL, Open Graph og:title/og:description/og:type/og:url/og:locale) to head section in theme/flavor/templates/page.html
+- [x] T017 [US3] Add ARIA landmarks and roles, ensure all images/icons have alt text or aria-hidden="true" for decorative SVGs, verify heading hierarchy (single h1) in theme/flavor/templates/page.html
+- [x] T018 [US3] Audit and optimize CSS for minimal payload: remove unused rules, verify total size < 10 KB, ensure sufficient color contrast ratios (WCAG AA) in theme/flavor/static/css/style.css
+- [x] T019 [US3] Verify all external links have target="_blank" rel="noopener", verify no JavaScript is included anywhere, verify no third-party resources are loaded in theme/flavor/templates/page.html
 
 **Checkpoint**: All user stories functional. Lighthouse scores 100/100 across all categories.
 
@@ -95,10 +95,10 @@
 
 **Purpose**: Deployment pipeline, documentation, and final validation
 
-- [ ] T020 [P] Create GitHub Actions workflow: checkout, setup Python 3.13, install dependencies, run `pelican content -s publishconf.py`, deploy output/ to GitHub Pages in .github/workflows/deploy.yml
-- [ ] T021 [P] Update README.md with project description, local development instructions (pelican content --listen --autoreload), and deployment info in README.md
-- [ ] T022 Verify total page weight (HTML + CSS) is under 100 KB by running production build and checking output file sizes
-- [ ] T023 Run final Lighthouse audit against production build and fix any remaining issues
+- [x] T020 [P] Create GitHub Actions workflow: checkout, setup Python 3.13, install dependencies, run `pelican content -s publishconf.py`, deploy output/ to GitHub Pages in .github/workflows/deploy.yml
+- [x] T021 [P] Update README.md with project description, local development instructions (pelican content --listen --autoreload), and deployment info in README.md
+- [x] T022 Verify total page weight (HTML + CSS) is under 100 KB by running production build and checking output file sizes
+- [x] T023 Run final Lighthouse audit against production build and fix any remaining issues
 
 ---
 

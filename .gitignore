@@ -9,5 +9,8 @@ wheels/
 # Virtual environments
 .venv
 
+# Pelican output
+output/
+
 # Claude
 .claude
