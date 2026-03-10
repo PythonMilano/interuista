@@ -1,0 +1,7 @@
+[project]
+name = "interuista"
+version = "1.0.0"
+description = "Intervista Pythonista Static Site"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
