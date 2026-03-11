@@ -1,11 +1,12 @@
 :root {
-    --color-bg: #ffffff;
-    --color-text: #1a1a2e;
-    --color-heading: #16213e;
-    --color-accent: #3066be;
-    --color-accent-hover: #1e4a8e;
-    --color-muted: #555;
-    --color-border: #e0e0e0;
+    --color-bg: #000000;
+    --color-text: #f0f0f0;
+    --color-heading: #ffffff;
+    --color-py: #e8a317;
+    --color-accent: #6ea8fe;
+    --color-accent-hover: #9ec5fe;
+    --color-muted: #aaaaaa;
+    --color-border: #333333;
     --font-body: system-ui, -apple-system, "Segoe UI", sans-serif;
     --font-size-base: 1rem;
     --max-width: 42rem;
@@ -42,6 +43,10 @@ h1 {
     font-size: 2rem;
     color: var(--color-heading);
     line-height: 1.2;
+}
+
+.py-accent {
+    color: var(--color-py);
 }
 
 h2 {
